@@ -21,7 +21,7 @@ Plugins:
 
 Feature:
 
-* cucumber.eclipse.feature - an Eclipse feature set that includes all of the above plugins.
+* cucumber.eclipse.feature - an Eclipse feature set that includes all of the above plugins except for the runner.
 
 Releasing
 =========
