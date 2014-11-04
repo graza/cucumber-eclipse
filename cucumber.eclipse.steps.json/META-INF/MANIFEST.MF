@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Cucumber Steps via JSON
+Bundle-SymbolicName: cucumber.eclipse.steps.json;singleton:=true
+Bundle-Version: 0.0.1.qualifier
+Bundle-Activator: cucumber.eclipse.steps.json.Activator
+Export-Package: cucumber.eclipse.steps.json
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources;bundle-version="3.5.0",
+ org.eclipse.jface.text;bundle-version="3.5.0",
+ cucumber.eclipse.steps.integration
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: cucumber.eclipse.steps.json

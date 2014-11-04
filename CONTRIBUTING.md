@@ -18,10 +18,11 @@ Plugins:
 * cucumber.eclipse.runner - runs a feature file wrapped up in a JUnit test. Initially will depend on the steps integration implementation.
 * cucumber.eclipse.steps.integration - an extension point for plugins that supply a means to deduce a list of all steps defined in a project
 * cucumber.eclipse.steps.jdt - an implementation of the integration extension point that uses Eclipse JDT to find steps.
+* cucumber.eclipse.steps.json - an implementation of the integration extension point that uses a JSON file to find steps.
 
 Feature:
 
-* cucumber.eclipse.feature - an Eclipse feature set that includes all of the above plugins.
+* cucumber.eclipse.feature - an Eclipse feature set that includes all of the above plugins except for the runner.
 
 Releasing
 =========

@@ -15,11 +15,12 @@
 
 	<modules>
 		<module>cucumber.eclipse.editor</module>
-		<module>cucumber.eclipse.editor.test</module>
+		<!-- module>cucumber.eclipse.editor.test</module -->
 		<module>cucumber.eclipse.feature</module>
 		<module>cucumber.eclipse.runner</module>
 		<module>cucumber.eclipse.steps.integration</module>
 		<module>cucumber.eclipse.steps.jdt</module>
+		<module>cucumber.eclipse.steps.json</module>
 		<module>cucumber.eclipse.p2updatesite</module>
 	</modules>
 
