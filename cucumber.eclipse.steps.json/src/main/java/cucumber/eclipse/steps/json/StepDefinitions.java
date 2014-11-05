@@ -1,4 +1,4 @@
-package cucumber.eclipse.steps.jdt;
+package cucumber.eclipse.steps.json;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,6 +11,8 @@ import java.util.regex.Pattern;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IResource;
+import org.eclipse.core.resources.IWorkspace;
+import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IPath;
 import org.eclipse.core.runtime.IProgressMonitor;
@@ -23,20 +25,14 @@ import cucumber.eclipse.steps.integration.Step;
 
 public class StepDefinitions implements IStepDefinitions {
 
-	@Override
-	public Set<Step> getSteps(IFile featurefile) {
+	public Set<Step> getSteps(IProject project) {
 		Set<Step> steps = new HashSet<Step>();
-
-		try {
-      Step step = new Step();
-      step.setSource("first.epm"); //method.getResource());
-      step.setText("^regex$"); //getAnnotationText(annotation));
-      step.setLineNumber(1); //getLineNumber(compUnit, annotation));
-      step.setLang("en"); //cukeAnnotation.getLang());
-      steps.add(step);
-		} catch (CoreException e) {
-			e.printStackTrace();
-		} 
+		Step step = new Step();
+		step.setSource(project.getFile("first.epm")); //method.getResource());
+		step.setText("^regex$"); //getAnnotationText(annotation));
+		step.setLineNumber(1); //getLineNumber(compUnit, annotation));
+		step.setLang("en"); //cukeAnnotation.getLang());
+		steps.add(step);
 		return steps;
 	}
 }

@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Cucumber Steps via JSON
 Bundle-SymbolicName: cucumber.eclipse.steps.json;singleton:=true
-Bundle-Version: 0.0.1.qualifier
+Bundle-Version: 0.0.11.qualifier
 Bundle-Activator: cucumber.eclipse.steps.json.Activator
 Export-Package: cucumber.eclipse.steps.json
 Require-Bundle: org.eclipse.ui,
